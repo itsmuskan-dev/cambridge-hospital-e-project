@@ -1,0 +1,59 @@
+:root {
+    --muted-red: #b33939; 
+    --soft-gray: #f8f9fa;
+    --dark-gray: #444;
+}
+
+body { background-color: var(--soft-gray); font-family: 'Poppins', sans-serif; }
+.main-heading { color: var(--muted-red); font-weight: 600; }
+
+/* Card Design (Original Size) */
+.doctor-card {
+    background: white; border-radius: 35px; overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.4s;
+    border: none; text-align: center; margin-bottom: 20px;
+}
+.doctor-card:hover { transform: translateY(-10px); }
+
+.card-header-red {
+    background-color: var(--muted-red); height: 160px;
+    position: relative; border-radius: 0 0 50% 50% / 0 0 40px 40px;
+}
+
+.doc-img-container {
+    width: 140px; height: 140px; border-radius: 50%; border: 6px solid white;
+    position: absolute; bottom: -70px; left: 50%; transform: translateX(-50%);
+    background: #fff; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.doc-img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+.doctor-body { padding: 90px 20px 30px; }
+.dept-name { color: var(--muted-red); font-weight: 600; }
+
+/* Buttons Swapped: Book (Left), History (Right) */
+.btn-container { display: flex; gap: 10px; margin-top: 20px; }
+
+.btn-book {
+    background: var(--muted-red); color: white; flex: 1; 
+    border: none; border-radius: 12px; padding: 10px; font-weight: 500;
+}
+
+.btn-history {
+    background: var(--dark-gray); color: white; flex: 1; 
+    border: none; border-radius: 12px; padding: 10px; font-weight: 500;
+}
+
+/* Modal Styling */
+.curvy-modal { border-radius: 25px !important; overflow: hidden; }
+.bg-red { background-color: var(--muted-red); }
+.custom-input { border-radius: 10px; padding: 12px; border: 1px solid #ddd; }
+
+.visible-calendar {
+    border: 2px solid var(--muted-red); border-radius: 15px;
+    padding: 20px; font-size: 1.2rem; background-color: #fff5f5; text-align: center;
+}
+
+.btn-confirm-booking {
+    background: var(--muted-red); color: white; border: none; 
+    padding: 15px; border-radius: 15px; font-size: 1.1rem; font-weight: 600;
+}
